@@ -1,0 +1,260 @@
+@font-face{
+    font-family: 'Instrument-Sans';
+    src: url(../fonts/InstrumentSans-VariableFont_wdth\,wght.ttf);
+}
+
+
+/* General Styles */
+html {
+    font-family: 'Instrument-Sans';
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #eff5ef;
+    transition: background-color 0.5s ease;
+  }
+  
+.navBar {
+
+    width: 100%;
+  }
+  
+  .nav {
+    list-style-type: none;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 2vh;
+    padding: 1vh;
+  }
+  
+  .navLink {
+    display: inline-block;
+    color: #3D9776;
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+  
+  .navLeft {
+    text-align: left;
+  }
+  
+  .btn {
+    color: black;
+    display: inline-block;
+    margin: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .btn:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #980F20;
+    transform: scaleX(0);
+    transition: transform 200ms ease-in-out;
+    transform-origin: 0% 50%;
+  }
+  
+  .btn:hover:after {
+    transform: scaleX(1);
+  }
+  
+  
+  .centralButton {
+    font-size: 30px;
+  }
+  
+  
+
+/* Header Styles */
+header {
+    width: 100%;
+    margin-top:-1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #logoDiv {
+    padding: 0;
+    align-items: center;
+  }
+  
+  #logo {
+    height: 20vh;
+  }
+
+
+  .hamburger-icon {
+    display: none; /* Initially hide the hamburger icon */
+    cursor: pointer;
+    padding: 10px;
+  }
+
+
+
+  .completeContainer{
+    display:flex;
+
+  }
+
+
+  .container {
+    width:50%;
+    background-color: #d1e3d1;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    height: 100px;
+  }
+
+  .submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .submit:hover {
+    background-color: #0056b3;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 767px){
+  .nav {
+    display: none; /* Hide the navigation links in responsive mode */
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff; /* Background color of the dropdown menu */
+    padding: 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 85%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .navLink {
+    margin: 10px 0;
+  }
+
+  
+  .navBar{
+    z-index: 9999;
+    position:fixed;
+    height:55px;
+  }
+  .navBar.menu-open{
+    background-color: black;
+  }
+
+
+
+#navMenu {
+  position:fixed;
+  top: 4vh;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's above other content */
+  opacity: 0; /* Initially hidden */
+}
+#navMenu.active {
+  opacity: 1; 
+  background-color: rgba(137, 204, 137, 1);
+}
+
+
+.hamburger-icon.menu-open{
+  z-index:99999;
+  background-color: blue;
+}
+
+body.menu-open {
+  background-color: rgba(137, 204, 137, 1); /* Background color when the menu is open */
+}
+
+#navMenu ul li {
+  margin-bottom: 20px;
+}
+
+
+.navLink a {
+  color: white;
+}
+
+.navLink{
+  text-decoration: none;
+  font-size: 24px;
+  display: block; /* Ensure each link takes up the full width */
+}
+
+.hamburger-icon {
+  opacity: 100%;
+  z-index: 9999;
+  position:fixed;
+  display: block;
+  cursor: pointer;
+  height:50px;
+}
+.hamburgerImg{
+  height:50px;
+}
+
+}

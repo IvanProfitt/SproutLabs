@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begin A Project</title>
+    <link rel="stylesheet" href="contactStyle.css">
+    <link rel="icon" href="../img/Sprout Logo transparent.png">
+</head>
+<body>
+    
+    
+    <!-- HEADER -->
+    <header class="content">
+        <div class="navBar">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <img class="hamburgerImg" src="../img/burger-list-menu-navigation-svgrepo-com.svg">
+            </div>
+            <ul class="nav" id="navMenu">
+                <div class="navRight">
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black">Home</a></li>
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="#">About</a></li>
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="#">Services</a></li>
+                </div>
+                <div class="navLeft">
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="#">Portfolio</a></li>
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="#">Blog</a></li>
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="contact.html">Contact</a></li>
+                </div>
+            </ul>
+        </div>
+        <div class="logoDiv">
+            <img src="../img/Sprout Logo white.png" id="logo">
+        </div>
+    </header>
+
+    <div class="completeContainer">
+
+        <div>
+            <h1>Let's Talk.</h1>
+            <p>We'd love to learn more about your project, goals, and how we can help.</p>
+            <p>Send us an email at <a href="">email here</a> or fill out our form.</p>
+            <ul>
+                <li>Instagram</li>
+                <li>Linkedin</li>
+                <li>Facebook</li>
+            </ul>
+        </div>
+
+
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="business">Business Name:</label>
+                <input type="text" id="business" name="business">
+            </div>
+            <div class="form-group">
+                <label for="message">How can we help?</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+      
+
+</body>
+<script src="../script.js"></script>
+</html>
