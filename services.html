@@ -5,9 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="servicesStyle.css">
     <link rel="icon" href="img/Sprout Logo transparent.png">
 </head>
 <body>
+
+    <header class="content">
+        <div class="header__container">
+            <!-- Hamburger Toggle Button -->
+            <div class="header__menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+        <nav data-sub_menu_auto_close="true" class="menu__body">
+            <ul class="menu__list nav">
+                <div class="navRight">
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="index.html">Home</a></li>
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="about.html">About</a></li>
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="services.html">Services</a></li>
+                </div>
+                <div class="navLeft">
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="portfolio.html">Portfolio</a></li>
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="blog.html">Blog</a></li>
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="contact.html">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+        </div>
+        </div>
+        <div class="logoDiv">
+            <img src="img/Sprout Logo white.png" id="logo">
+        </div>
+    </header>
+
+    <div class="firstItem">
+        <h1 class="headCaption">Allow your web presence to</h1><h1 class="headCaption"> <span class="green">blossom</span></h1>
+    </div>
+
+
+    <div class="containerContent offer">
+        <div class="">
+            <h1 class="sectionHeader">What we do</h1>
+            <h3 class="pHeader fancy">Reinvigorate Web Presence</h3>
+            <p class="doParagraph"> We specialize in revitalizing online identities by refreshing content, optimizing for search engines, and enhancing user experience. Let us breathe new life into your digital presence and captivate your audience.</p>
+            <div class="mid">
+                <h3 class="pHeader fancy">Generate New Clients</h3>
+                <p class="doParagraph">Our strategic approach combines creativity and data-driven insights to attract and convert leads through targeted marketing campaigns and engaging content. Expand your client base and watch your business thrive in the digital sphere.</p>
+            </div>
+            <div class="end">
+                <h3 class="pHeader fancy">Transform Your Brand</h3>
+                <p class="doParagraph">Beyond cosmetic changes, we redefine your brand's identity and perception through comprehensive analysis and strategic planning. Unlock your brand's full potential and foster deeper connections with your audience through cohesive messaging and visual identity.
+
+        </div>
+        </div>
+        <div class="containerContent">
+        <h1 class="sectionHeader">What we offer</h1>
+        <h2 class="offerHeader">Web Solutions</h2>
+        <p class="offerP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quos itaque ducimus quo ad ipsa consectetur iusto commodi vel aut, veniam mollitia facilis beatae vero dolores alias laudantium excepturi ratione.</p>
+        <ul class="offerList">
+            <li>UX Design</li>
+            <li>Mobile & Desktop Website Design</li>
+            <li>SEO & SEM</li>
+            <li>Monitoring & Optimization</li>
+        </ul>
+        <h2 class="offerHeader">Digital Marketing</h2>
+        <p class="offerP">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus modi ratione veniam suscipit deserunt unde sed amet, sunt ad, quisquam, architecto consequatur? Deserunt sunt voluptas asperiores ab voluptatem iste hic.</p>
+        <ul class="offerList">
+            <li>Email Campaigns</li>
+            <li>Social Media Marketing</li>
+            <li>Advertising Campaigns</li>
+            <li>Marketing Strategy</li>
+        </ul>
+        <h2 class="offerHeader">Brand Expression</h2>
+        <p class="offerP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquam deleniti voluptate perferendis dolore accusantium quisquam minima asperiores porro quod. Minus nulla quis ab tenetur facilis, praesentium eveniet modi cum.</p>
+        <ul class="offerList">
+
+            <li>Brand Identity</li>
+            <li>Naming and Logo Designs</li>
+            <li>Messaging</li>
+            <li>Brand Strategy</li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="containerContent">
+        <div class="cta">
+            <h1 class="ctaHeader">We'd love to work with you to grow your brand.</h1>
+            <a href="contact.html" class="learnMoreLink">Get in Touch</a>
+        </div>
+    </div>
+
+
+    </div>
+
+
+        <footer class="footer">
+            <div class="container">
+            <div class="row">
+                <div class="footer-col mailing-list">
+                    <h2>Keep up with our quarterly newsletter</h2>
+                    <input type="email" id="emailInput" placeholder="Your Email Address">
+                    <button onclick="subscribe()">Subscribe</button>
+                    <p id="confirmationMsg"></p>
+                </div>
+
+            <div class="footer-col">
+                    <img src="img/Sprout Logo white.png" class="footerLogo">
+                    <ul class="footerList">
+                        <li><a href="mailto:email@example.com?subject=Subject%20Here&body=Message%20Here">Info@SproutLabs.Co</a></li>
+                        <li><a href="#">502.409.2963</a></li>
+                    </ul>
+
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul class="footerList">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+            </div>
+
+           <div class="footer-col">
+             <h4>follow us</h4>
+             <div class="social-links">
+               <a href="#"><i class="fab fa-facebook-f"><img class="footer-icon" src="img/icons8-facebook-50 (1).png"></i></a>
+               <a href="#"><i class="fab fa-instagram"><img class="footer-icon" src="img/icons8-instagram-50 (1).png"></i></a>
+               <a href="#"><i class="fab fa-linkedin-in"><img class="footer-icon" src="img/icons8-linkedin-50.png"></i></a>
+             </div>
+           </div>
+
+           
+         </div>
+        </div>
+     </footer>
     
 </body>
+<script src="script.js"></script>
 </html>

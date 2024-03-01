@@ -112,28 +112,130 @@ function scrollFunction() {
 
 
 
-function toggleMenu() {
-  var navMenu = document.getElementById("navMenu");
-  if (navMenu.style.display === "block") {
-      navMenu.style.display = "none";
-      navMenu.classList.toggle("active");
-      document.body.classList.toggle("menu-open");
+
+function subscribe() {
+  var emailInput = document.getElementById("emailInput").value;
+  var confirmationMsg = document.getElementById("confirmationMsg");
+  if (validateEmail(emailInput)) {
+    confirmationMsg.textContent = "Thank you for subscribing!";
+    confirmationMsg.style.color = "green";
+    // Here you can add code to send the email to your server for processing
   } else {
-      navMenu.style.display = "block";
-      navMenu.classList.toggle("active");
-      document.body.classList.toggle("menu-open");
+    confirmationMsg.textContent = "Please enter a valid email address.";
+    confirmationMsg.style.color = "red";
   }
+}
+
+function validateEmail(email) {
+  var re = /\S+@\S+\.\S+/;
+  return re.test(email);
 }
 
 
 
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-  event.preventDefault();
-  // Here you can add JavaScript to handle form submission like AJAX request to a backend server
-  // For demonstration purpose, let's just log the form data
-  const formData = new FormData(event.target);
-  for (const entry of formData.entries()) {
-    console.log(entry[0] + ": " + entry[1]);
-  }
-  alert("Form submitted! Check the console for the form data.");
-});
+
+
+
+
+
+
+'use strict';
+
+const isMobile = {
+	Android: function () {
+		return navigator.userAgent.match(/Android/i);
+	},
+	BlackBerry: function () {
+		return navigator.userAgent.match(/BlackBerry/i);
+	},
+	iOS: function () {
+		return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+	},
+	Opera: function () {
+		return navigator.userAgent.match(/Opera Mini/i);
+	},
+	Windows: function () {
+		return navigator.userAgent.match(/IEMobile/i);
+	},
+	any: function () {
+		return (
+			isMobile.Android() ||
+			isMobile.BlackBerry() ||
+			isMobile.iOS() ||
+			isMobile.Opera() ||
+			isMobile.Windows()
+		);
+	},
+};
+
+if (isMobile.any()) {
+	document.body.classList.add('_touch');
+
+	let menuArrows = document.querySelectorAll('.menu__arrow');
+	if (menuArrows.length > 0) {
+		for (let index = 0; index < menuArrows.length; index++) {
+			const menuArrow = menuArrows[index];
+			menuArrow.addEventListener('click', function (e) {
+				menuArrow.parentElement.classList.toggle('_active');
+			});
+		}
+	}
+} else {
+	document.body.classList.add('_pc');
+}
+
+// burger menu
+const iconMenu = document.querySelector('.menu__icon');
+const menuBody = document.querySelector('.menu__body');
+if (iconMenu) {
+	iconMenu.addEventListener('click', function (e) {
+		document.body.classList.toggle('_lock');
+		iconMenu.classList.toggle('_active');
+		menuBody.classList.toggle('_active');
+	});
+}
+
+// scroll on click
+const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
+if (menuLinks.length > 0) {
+	menuLinks.forEach((menuLink) => {
+		menuLink.addEventListener('click', onMenuLinkClick);
+	});
+
+	function onMenuLinkClick(e) {
+		const menuLink = e.target;
+		if (
+			menuLink.dataset.goto &&
+			document.querySelector(menuLink.dataset.goto)
+		) {
+			const gotoBlock = document.querySelector(menuLink.dataset.goto);
+			const gotoBlockValue =
+				gotoBlock.getBoundingClientRect().top +
+				pageYOffset -
+				document.querySelector('.header').offsetHeight;
+
+			if (iconMenu.classList.contains('_active')) {
+				document.body.classList.remove('_lock');
+				iconMenu.classList.remove('_active');
+				menuBody.classList.remove('_active');
+
+				// auto close sub-menu
+				if (
+					menuBody.dataset.sub_menu_auto_close &&
+					document.body.classList.contains('_touch')
+				) {
+					let menuArrows = document.querySelectorAll('.menu__arrow');
+					for (let index = 0; index < menuArrows.length; index++) {
+						menuArrows[index].parentElement.classList.remove('_active');
+					}
+				}
+			}
+
+			window.scrollTo({
+				top: gotoBlockValue,
+				behavior: 'smooth',
+			});
+			e.preventDefault();
+		}
+	}
+}

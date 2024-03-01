@@ -1,0 +1,36 @@
+.projHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding-bottom:20vh;
+    
+
+}
+.cta{
+    padding:5vh 10vh 5vh 5vh;
+    text-align: right;
+  }
+  
+  .ctaHeader{
+    font-weight:800;
+    font-size:3vh;
+    color:#314f31;
+  }
+
+
+  .projHead{
+    font-size:10vh;
+    padding-top:0;
+    margin-top:0;
+    font-family:"Instrument-Serif"
+  }
+
+  .containerContent{
+    border-top:1px solid black;
+    display: flex;
+    flex-direction: column;
+    width:95%;
+    margin:auto;
+}
+  

@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Work</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="portfolioStyle.css">
-    <link rel="icon" href="img/Sprout Logo transparent.png">
+    <title>Begin A Project</title>
+    <link rel="stylesheet" href="contactStyle.css">
+    <link rel="icon" href="../img/Sprout Logo transparent.png">
 </head>
 <body>
-
+    
+    
+    <!-- HEADER -->
     <header class="content">
 
 
@@ -40,31 +41,52 @@
         </div>
     </header>
 
-    <div class="projHeader">
-    <h1 class="projHead">Our Projects</h1>
+    <div class="completeContainer">
 
-    <h2>Check Back Soon!</h2>
-    </div>
-    <div class="containerContent">
-        <div class="cta">
-            <h1 class="ctaHeader">We'd love to work with you to grow your brand.</h1>
-            <a href="contact.html" class="learnMoreLink">Get in Touch</a>
+        <div class="leftStatement">
+            <h1>Let's Talk.</h1>
+            <p class="topContent">We'd love to learn more about your project, goals, and how we can help.</p>
+            <p class="topContent">Send us an email at <a class="topContent email" href="mailto:info@SproutLabs.co">Info@SproutLabs.Co</a> or fill out our form.</p>
+            <ul class="Socials">
+                <li class="social-link-top">Instagram</li>
+                <li class="social-link-top">Linkedin</li>
+                <li class="social-link-top">Facebook</li>
+            </ul>
+        </div>
+
+
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="business">Business Name:</label>
+                <input type="text" id="business" name="business">
+            </div>
+            <div class="form-group">
+                <label for="message">How can we help?</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit">Submit</button>
+            </form>
         </div>
     </div>
-    
-
-
+      
 
     <footer class="footer">
-        <div class="container">
+        <div class="footerContainer">
          <div class="row">
-
-            <div class="footer-col mailing-list">
-                <h2>Keep up with our quarterly newsletter</h2>
-                <input type="email" id="emailInput" placeholder="Your Email Address">
-                <button onclick="subscribe()">Subscribe</button>
-                <p id="confirmationMsg"></p>
-            </div>
            <div class="footer-col">
                 <img src="img/Sprout Logo white.png" class="footerLogo">
                 <ul class="footerList">
@@ -95,8 +117,7 @@
          </div>
         </div>
      </footer>
-    
-    
+
 </body>
-<script src="script.js"></script>
+<script src="../script.js"></script>
 </html>

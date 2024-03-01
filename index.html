@@ -11,30 +11,39 @@
 </head>
 <body>
 
+    <div class="allContent">
+
     <!-- HEADER -->
     <header class="content">
-        <div class="navBar">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <img class="hamburgerImg" src="img/burger-list-menu-navigation-svgrepo-com.svg">
-            </div>
-            <ul class="nav" id="navMenu">
+
+
+        <div class="header__container">
+            <!-- Hamburger Toggle Button -->
+            <div class="header__menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+        <nav data-sub_menu_auto_close="true" class="menu__body">
+            <ul class="menu__list nav">
                 <div class="navRight">
-                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black">Home</a></li>
-                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="#">About</a></li>
-                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="#">Services</a></li>
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="index.html">Home</a></li>
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="about.html">About</a></li>
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="services.html">Services</a></li>
                 </div>
                 <div class="navLeft">
-                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="#">Portfolio</a></li>
-                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="#">Blog</a></li>
-                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="contact/index.html">Contact</a></li>
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="portfolio.html">Portfolio</a></li>
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="blog.html">Blog</a></li>
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="contact.html">Contact</a></li>
                 </div>
             </ul>
+        </nav>
+        </div>
         </div>
         <div class="logoDiv">
             <img src="img/Sprout Logo white.png" id="logo">
         </div>
     </header>
-
+    
 
 
     
@@ -53,7 +62,7 @@
         <div class="infoDiv">
             <h1 class="statement fancy">Your website solution.</h1>
             <div class="learnMore">
-                <a href="#" class="learnMoreLink">Learn More</a>
+                <a href="contact.html" class="learnMoreLink">Learn More</a>
                 <div class="arrowLearn">
                     <img src="img/arrow-down-svgrepo-com.svg">
                 </div>
@@ -104,7 +113,7 @@
                             </div>
                             <div class="item-content">
                                 <h3 class="list-header"> Website Hosting</h3>
-                                <p>Hosting fees are built right into the monthly payment.</p>
+                                <p>The monthly payment includes the hosting fees.</p>
                             </div>
                         </div>
                     </div>
@@ -117,7 +126,7 @@
                                 </div>
                                 <div class="item-content">
                                     <h3 class="list-header">Unlimited Edits</h3>
-                                    <p>Change anything you want at anytime and it will be done that day.</p>
+                                    <p>Edits are built into the monthly payment - done within 48 hours.</p>
                                 </div>
                             </div>
                         </div>
@@ -131,7 +140,7 @@
                             </div>
                             <div class="item-content">
                                 <h3 class="list-header">  24/7 Customer Service</h3>
-                                <p>Call direct anytime day or night, no phone trees or automated responses.</p>
+                                <p>Contact by phone or email anytime.</p>
                             </div>
                         </div>
                     </div>
@@ -144,7 +153,7 @@
                             </div>
                             <div class="item-content">
                                 <h3 class="list-header">Web Design &amp; Development</h3>
-                                <p>Includes over 40 hours of design, development, and testing.</p>
+                                <p>Includes a personalized design, along with 40 hours development and testing.</p>
                             </div>
                         </div>
                     </div>
@@ -156,8 +165,8 @@
                                 <img class="leafImg"src="img/leaf-outline.svg"> 
                             </div>
                             <div class="item-content">
-                                <h3 class="list-header">100 Google Page Speed Score</h3>
-                                <p>We can achieve a perfect 100 on Google Page Speed scores and boost your search ranking.</p>
+                                <h3 class="list-header">95+ Google Page Speed Score</h3>
+                                <p>A near-perfect Google Page Speed Score boosts your Google rankings and allows for a smoother user experience.</p>
                             </div>
                         </div>
                     </div>
@@ -170,7 +179,7 @@
                             </div>
                             <div class="item-content">
                                 <h3 class="list-header">Google Analytics</h3>
-                                <p>We install Analytics for free to monitor traffic and where it comes from.</p>
+                                <p>Monthly payment includes Analytics software, to monitor traffic.</p>
                             </div>
                         </div>
                     </div>
@@ -184,18 +193,18 @@
     <div class="pricing-wrap">
         <div class="pricing-section">
           <div class="pricing-option">
-            <h2>Online Marketing</h2>
-            <p class="price">Inquire</p>
+            <h2 class="pricing-header">Online Marketing</h2>
+            <h3 class="price">Inquire</h3>
             <ul>
-              <li>Feature 1</li>
-              <li>Feature 2</li>
-              <li>Feature 3</li>
+              <li class="pricing-feature">Digital Marketing Campaigns</li>
+              <li>Brand Expression</li>
+              <li>SEO and SEM</li>
             </ul>
             <a href="/html/contact.html" class="learn-more-button">Contact us</a>
           </div>
           <div class="pricing-option highlighted">
-            <h2>Premium Plan</h2>
-            <p class="price">$150/month</p>
+            <h2 >Premium Plan</h2>
+            <h3 class="price">$150/month</h3>
             <ul>
               <li>Handmade Website</li>
               <li>Hosting</li>
@@ -206,14 +215,14 @@
             <a href="/html/contact.html" class="learn-more-button">Contact us</a>
           </div>
           <div class="pricing-option">
-            <h2>Ecommerce Website</h2>
-            <p class="price">$3000</p>
+            <h2 class="pricing-header">E-commerce Website</h2>
+            <h3 class="price">$6000</h3>
             <ul>
-              <li>Feature 1</li>
-              <li>Feature 2</li>
-              <li>Feature 3</li>
-              <li>Feature 4</li>
-              <li>Feature 5</li>
+                
+              <li>Custom Shopify Integration</li>
+              <li>Custom Design</li>
+              <li>Editable</li>
+              <li>Fixed Cost</li>
             </ul>
             <a href="/html/contact.html" class="learn-more-button">Contact us</a>
           </div>
@@ -353,6 +362,7 @@
             </div>
         </div>
     </div>
+</div>
 
 
 
@@ -362,37 +372,28 @@
            <div class="footer-col">
                 <img src="img/Sprout Logo white.png" class="footerLogo">
                 <ul class="footerList">
-                    <li><a href="#">EMAIL</a></li>
-                    <li><a href="#">Phone Number</a></li>
+                    <li><a href="mailto:email@example.com?subject=Subject%20Here&body=Message%20Here">Info@SproutLabs.Co</a></li>
+                    <li><a href="#">502.409.2963</a></li>
                 </ul>
 
            </div>
            <div class="footer-col">
-             <h4>company</h4>
+             <h4>Navigation</h4>
              <ul class="footerList">
-               <li><a href="#">about us</a></li>
-               <li><a href="#">our services</a></li>
-               <li><a href="#">privacy policy</a></li>
-               <li><a href="#">affiliate program</a></li>
-             </ul>
-           </div>
-           <div class="footer-col">
-             <h4>get help</h4>
-             <ul class="footerList">`
-               <li><a href="#">FAQ</a></li>
-               <li><a href="#">shipping</a></li>
-               <li><a href="#">returns</a></li>
-               <li><a href="#">order status</a></li>
-               <li><a href="#">payment options</a></li>
-             </ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
            </div>
            <div class="footer-col">
              <h4>follow us</h4>
              <div class="social-links">
-               <a href="#"><i class="fab fa-facebook-f"></i></a>
-               <a href="#"><i class="fab fa-twitter"></i></a>
-               <a href="#"><i class="fab fa-instagram"></i></a>
-               <a href="#"><i class="fab fa-linkedin-in"></i></a>
+               <a href="#"><img class="footer-icon" src="img/icons8-facebook-50 (1).png"></a>
+               <a href="#"><img class="footer-icon" src="img/icons8-instagram-50 (1).png"></a>
+               <a href="#"><img class="footer-icon" src="img/icons8-linkedin-50.png"></a>
              </div>
            </div>
          </div>

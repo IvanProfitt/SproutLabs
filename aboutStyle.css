@@ -1,0 +1,43 @@
+body{
+    color: #005A86;
+    background-color:#b3e6ff;
+}
+
+.openingStatementDiv{
+    display: flex;
+    flex-direction: column;
+    width:85%;
+    align-items: center;
+    margin: auto;
+}
+
+
+.valueDiv{
+    display: flex;
+    flex-direction: column;
+    width:85%;
+    margin:auto;
+}
+
+.valueHeader{
+    font-size:2vw;
+
+}
+
+.subHeader{
+    font-size:3vw;
+}
+
+.navSection > h1{
+    color:#002436;
+}
+
+.navSection{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width:70%;
+    align-items:end;
+    padding-top:5vw;
+    padding-bottom:10vw;
+}

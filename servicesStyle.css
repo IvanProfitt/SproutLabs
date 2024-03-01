@@ -1,0 +1,120 @@
+body{
+  background-color: #d0e2d0;
+}
+
+
+
+.firstItem{
+    display: flex;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:25vh;
+    padding-bottom:15vh;
+}
+
+.headCaption, .sectionHeader{
+    font-family: "instrument-serif";
+    margin:0;
+}
+
+.headCaption{
+    font-size:7vw;
+  }
+
+.sectionHeader{
+    padding-bottom:3vh;
+    padding-top:0;
+}
+
+.pHeader{
+    padding-top:1vh;
+    padding-bottom:0;
+    margin-bottom:0;
+    font-size:40px;
+    color:#404040;
+    width:50%;
+
+    
+}
+
+.offer{
+  padding-bottom:20vh;
+}
+
+.containerContent{
+    border-top:1px solid black;
+    display: flex;
+    flex-direction: column;
+    width:95%;
+    margin:auto;
+}
+.mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mid >.doParagraph{
+    width:70%;
+}
+
+.end{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+
+.doParagraph{
+    width:50%;
+    padding-top:0;
+    margin-top:0;
+    font-size:40px;
+}
+
+.green{
+    text-decoration: underline;
+}
+
+.cta{
+  padding:5vh 10vh 5vh 5vh;
+  text-align: right;
+}
+
+.ctaHeader{
+  font-weight:800;
+  font-size:3vh;
+  color:#314f31;
+}
+
+.offerList >li{
+    padding:1vw;
+    
+}
+
+.offerHeader{
+  margin-bottom:0;
+  font-size: 7vh;
+  font-weight:450;
+  letter-spacing: -.5vh;
+  color:#314f31;
+}
+
+.offerP{
+  margin-top:0;
+  font-weight:500;
+  font-size:2.5vh;
+}
+
+.offerList {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  font-size:1.5vh;
+  margin:0;
+  padding:0;
+}
+
+

@@ -5,9 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="aboutStyle.css">
     <link rel="icon" href="img/Sprout Logo transparent.png">
 </head>
 <body>
+    <header class="content1">
+
+
+        <div class="header__container">
+            <!-- Hamburger Toggle Button -->
+            <div class="header__menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+        <nav data-sub_menu_auto_close="true" class="menu__body">
+            <ul class="menu__list nav">
+                <div class="navRight">
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="index.html">Home</a></li>
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="about.html">About</a></li>
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="services.html">Services</a></li>
+                </div>
+                <div class="navLeft">
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="portfolio.html">Portfolio</a></li>
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="blog.html">Blog</a></li>
+                    <li class="navLink"><a class="btn btn-shadow-drop btn-shadow-drop--black" href="contact.html">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+        </div>
+        </div>
+        <div class="logoDiv">
+            <img src="img/Sprout Logo white.png" id="logo">
+        </div>
+
+        
+    </header>
+     <div class="openingStatementDiv">
+        <h1 class="openingStatement">Sprout is dedicated to offering a comprehensive range of services to businesses seeking to elevate their online presence.</h1>
+        <p>Our mission is to empower businesses to thrive in the digital landscape. 
+            We prioritize delivering the finest user experience by employing simple yet innovative design, ensuring your users are thoroughly satisfied with their interactions.
+            We believe in great customer service 
+            and a tailor-made solution to any problem - Each business is unique, and their web presence should reflect this. 
+            to digital marketing. Whether you're a new startup or simply looking for a refresh, Sprout has a solution for you.
+        </p>
+    </div>
+
+    <div class="valueDiv">
+        <h1 class="valueHeader">Our values</h1>
+        <h2 class="subHeader">allowing businesses to blossom</h2>
+        <h2 class="subHeader">simple and innovative design</h2>
+        <h2 class="subHeader">elevating customer experience and usability</h2>
+    </div>
+    <div class="navSection">
+        <h1>See what Sprout can do for you.</h1>
+        <a class="btn btn-shadow-drop btn-shadow-drop--black" href="services.html">Learn More</a>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+         <div class="row">
+
+            <div class="footer-col mailing-list">
+                <h2>Keep up with our quarterly newsletter</h2>
+                <input type="email" id="emailInput" placeholder="Your Email Address">
+                <button onclick="subscribe()">Subscribe</button>
+                <p id="confirmationMsg"></p>
+            </div>
+           <div class="footer-col">
+                <img src="img/Sprout Logo white.png" class="footerLogo">
+                <ul class="footerList">
+                    <li><a href="mailto:email@example.com?subject=Subject%20Here&body=Message%20Here">Info@SproutLabs.Co</a></li>
+                    <li><a href="#">502.409.2963</a></li>
+                </ul>
+
+           </div>
+           <div class="footer-col">
+             <h4>Navigation</h4>
+             <ul class="footerList">
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+           </div>
+           <div class="footer-col">
+             <h4>follow us</h4>
+             <div class="social-links">
+               <a href="#"><i class="fab fa-facebook-f"><img class="footer-icon" src="img/icons8-facebook-50 (1).png"></i></a>
+               <a href="#"><i class="fab fa-instagram"><img class="footer-icon" src="img/icons8-instagram-50 (1).png"></i></a>
+               <a href="#"><i class="fab fa-linkedin-in"><img class="footer-icon" src="img/icons8-linkedin-50.png"></i></a>
+             </div>
+           </div>
+         </div>
+        </div>
+     </footer>
     
 </body>
+<script src="script.js"></script>
 </html>
