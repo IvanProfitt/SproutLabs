@@ -50,10 +50,8 @@ header {
 #logo {
   height: 20vh;
 }
-
 /* Navigation Styles */
 .navBar {
-
   width: 100%;
 }
 
@@ -64,6 +62,7 @@ header {
   align-items: center;
   margin-top: 2vh;
   padding: 1vh;
+  width:98%;
 }
 
 .navLink {
@@ -76,6 +75,8 @@ header {
 .navLeft {
   text-align: left;
 }
+
+
 
 .btn {
   color: black;
@@ -99,6 +100,12 @@ header {
 }
 
 
+
+.navLink {
+  margin: 0 10px; /* Adjust margin as needed */
+}
+
+
 .centralButton {
   font-size: 30px;
 }
@@ -110,7 +117,6 @@ body >footer{
   margin:0;
   padding:0;
 }
-
 /* Video Styles */
 .videoClass {
   position: relative;
@@ -146,6 +152,7 @@ body >footer{
 
 .learnMore {
   font-size: 3vw;
+  color:white;
   display: inline-block; /* Ensure "learnMore" and "arrowLearn" are inline */
 }
 
@@ -153,8 +160,10 @@ body >footer{
   border-radius: 10px;
   color: white;
   padding: 10px;
-  margin: 0px;
-  text-decoration: none;
+  margin: 0;
+}
+.learnMoreLink:visited{
+  color:white;
 }
 
 .arrowLearn {
@@ -186,31 +195,30 @@ body >footer{
   color: #003673;
   font-size: 4vw;
   margin: 18vh;
-  margin-bottom: 0px;
+  margin-bottom: .5vh;
   opacity: 80%;
 }
 
 .missionLearnMore {
   align-self: center;
   color: black;
-  font-size:1.5vw;
+  font-size:3vw;
   margin-bottom:18vh;
 }
 
 /* Price Section Styles */
 .priceHeader {
-  margin-top:30px;
   font-size: 50px;
   text-align: center;
 }
 
 
 .price{
-  margin-top:-7vw;
-  margin-bottom:5vw;
+  margin-top:-7vh;
+  margin-bottom:5vh;
   font-size:2vw;
   font-weight:900;
-  color: #408547;
+  color: #669d6c;
 }
 
 
@@ -225,11 +233,13 @@ body >footer{
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 0;
+  margin:0;
 }
 
 .textLeft {
   width: 50%;
   text-align: center;
+  font-size: 3vw;
 }
 
 .wordRight {
@@ -237,7 +247,7 @@ body >footer{
   width: 50%;
   color: #005A86;
   text-align: center;
-  font-size: 8vw;
+  font-size: 10vw;
   opacity: 80%;
 }
 
@@ -249,6 +259,7 @@ body >footer{
   padding-top:25vh;
   width: 85%;
   margin: auto;
+  margin-bottom:25vw;
 }
 
 
@@ -354,76 +365,6 @@ body >footer{
 }
 
 
-/* Accordion Styles */
-.accordionDiv{
-  display:flex;
-  border-top: 1px solid black;
-  width:100%;
-
-}
-
-.doodle{
-  margin:auto;
-  max-width:25%;
-}
-
-.plantDoodle{
-  width:28vw;
-
-}
-.accordionSection{
-
-  margin-bottom:15vh;
-  padding-top:5vh;
-}
-.accordion {
-  width: 85%;
-  right: 0;
-  margin: 20px 0 20px auto;
-}
-
-.accordion-item {
-  margin-bottom: -45px;
-  border: none;
-}
-
-.accordion-header {
-  letter-spacing: -1px;
-  padding: 10px;
-  cursor: pointer;
-  position: relative;
-  display: inline-block;
-  transition: color 0.3s ease-in-out; /* Added transition for color change */
-}
-
-.header-text {
-  font-weight: 500;
-}
-
-.accordion-content {
-  color: #2b2b28;
-  line-height: 200%;
-  font-size: large;
-  padding: 10px;
-  margin-top:-5vh;
-  margin-bottom:3vh;
-  padding-right: 20%;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out, visibility 0.3s ease-in-out;
-}
-
-.active .accordion-content {
-  max-height: 1000px;
-  visibility: visible;
-  transition: max-height 0.3s ease-in-out, visibility 0.3s ease-in-out;
-}
-
-.accordion-header:hover,
-.accordion-header:hover .arrowLearn img:hover {
-  color: #005A86; 
-}
-
 
 /* Arrow Styles */
 .arrow {
@@ -456,6 +397,7 @@ body >footer{
 
 .pricing-header{
   width:80%;
+  padding:1.8vh;
 }
 
 .pricing-section {
@@ -501,7 +443,7 @@ body >footer{
 }
 
 .pricing-option p.price {
-  font-size: 2.5vh;
+  font-size: 2.5vw;
   color: #fff; /* White font color for better contrast */
 }
 
@@ -522,19 +464,57 @@ body >footer{
 .learn-more-button {
   display: inline-block;
   padding: 1vh 2vh;
-  background-color: #007bff;
-  color: #fff; /* White font color for better contrast */
+  background-color: white;
+  color: black !important;
   text-decoration: none;
   border-radius: 1vw;
 }
 
 .learn-more-button:hover {
-  background-color: #0056b3;
+  background-color: #999999;
 }
 
 .header__container{
   width:100%;
 }
+
+
+
+
+
+
+
+
+
+
+.containerContent{
+  border-top:1px solid black;
+  display: flex;
+  flex-direction: column;
+  width:95%;
+  margin:auto;
+}
+
+.cta{
+  padding:5vh 10vh 5vh 5vh;
+  text-align: right;
+}
+
+.ctaHeader{
+  font-weight:800;
+  font-size:3vh;
+  color:#314f31;
+}
+
+.ctaLink{
+  color:black !important;
+}
+
+.ctaLink:visited{
+  color:black;
+}
+
+
 
 /*Footer Styles*/
 .body >footer{
@@ -640,6 +620,11 @@ a:visited{
 }
 
 
+.smallText{
+  color:white;
+  margin-top:0;
+  padding-top:0;
+}
 
 
 .mailing-list {
@@ -685,37 +670,37 @@ a:visited{
 
 
 /*responsive*/
-@media(max-width: 767px){
+@media(max-width: 1200px){
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
 }
 .leftRight{
   flex-direction: column;
+  width:100%;
 }
 
 .right{
-  width:85%;
+  width:100%;
 }
 
 .pricing-section {
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center items horizontally */
+  width:85%;
 }
 
-.pricing-option {
-  width: 70%; /* Adjust width as needed */
-  margin-bottom: 5vh; /* Add some margin between pricing options */
-}
 
 
 .pricing-option h2 {
-  font-size: 3vh;
-  margin-bottom: auto;
+  font-size: 4vh;
+  margin-bottom: 0;
   color: #fff; /* White font color for better contrast */
+  width:100%;
 }
 .pricing-option ul li {
   margin-bottom: 3vh;
+  font-size:2.5vh;
 }
 
 
@@ -726,7 +711,7 @@ a:visited{
   margin-bottom:2vh;
 }
 .missionStatement{
-  width:100%;
+  width:85%;
   font-size:7vw;
 }
 .missionLearnMore{
@@ -736,6 +721,25 @@ a:visited{
   max-width: 100%;
   margin: 20px 0 20px auto;
 }
+
+.leftRight{
+  align-items: center;
+}
+
+.pricing-option{
+  width:85%;
+  height:fit-content;
+}
+
+
+
+.price{
+  margin-top:1vh;
+  font-size:5vw;
+
+
+}
+
 
 .wordRight{
   margin:0vh;
@@ -752,7 +756,7 @@ a:visited{
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center items horizontally */
   text-align: center; 
-  margin: 5vh 0;
+  margin: vh 0;
 }
 
 .textLeft {
@@ -822,7 +826,7 @@ a:visited{
 
 
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   
 
 
@@ -1030,6 +1034,55 @@ a:visited{
       justify-self:center;
       margin-bottom:15vh;
     }
+
+
+    .menu__list.nav {
+      display: flex;
+      flex-direction: column;
+      align-items:flex-start;
+    }
+    
+    .menu__list.nav .navRight,
+    .menu__list.nav .navLeft {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    
+    .navLink {
+      margin: 0 10px; /* Adjust margin as needed */
+    }
+
+    
+
+
+
+    
+.list-group{
+  display:grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  width:110%;
+  padding:50px;
+}
+.list-item{
+  text-align: left;
+  width:100%;
+}
+
+.list-item-content{
+  display: flex;
+  align-items: start;
+  width:100%;
+}
+
+.list-header{
+  margin-top:1px;
+}
+
+
+
+
   }
   
   

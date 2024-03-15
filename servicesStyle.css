@@ -39,6 +39,8 @@ body{
     
 }
 
+
+
 .offer{
   padding-bottom:20vh;
 }
@@ -118,3 +120,33 @@ body{
 }
 
 
+@media (max-width: 1200px) {
+  .doParagraph{
+    width:100%;
+    font-size:3vw;
+    align-self:start;
+  }
+
+  .pHeader{
+    width:100%;
+    align-self: start;
+  }
+
+  .mid{
+    align-items:start;
+  }
+
+  .mid >.doParagraph{
+    width:85%;
+  }
+
+
+
+  .weDoContainer{
+    border-top:1px solid black;
+    display: flex;
+    flex-direction: column;
+    width:95%;
+    margin:auto;
+}
+}

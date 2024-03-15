@@ -1,0 +1,180 @@
+<!--ACCORDION-->
+<div class="accordionDiv">
+    <div class="doodle">
+        <img class="plantDoodle" src="img/undraw_environment_iaus.svg">
+    </div>
+
+    <div class="accordionSection">
+        <div class="accordion">
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                <h1 class="header-text">Websites</h1>
+                <div class="arrow">
+                    <img src="img/arrow-down-svgrepo-com.svg">
+                </div>
+                <span class="arrow"></span>
+                </div>
+                <div class="accordion-content">
+                <p>Welcome to the digital forefront! Our expert team crafts stunning and functional 
+                    websites tailored to elevate your online presence. Whether you're establishing a 
+                    new site or revamping an existing one, we blend design and functionality seamlessly
+                    to create a digital space that speaks volumes about your brand.</p>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <div class="accordion-header">
+                <h1 class="header-text">Digital Advertising</h1>
+                <div class="arrow">
+                    <img src="img/arrow-down-svgrepo-com.svg">
+                </div>
+                <span class="arrow"></span>
+                </div>
+                <div class="accordion-content">
+                <p>Supercharge your outreach with our cutting-edge digital advertising solutions. 
+                    From targeted campaigns to strategic ad placements, we specialize in maximizing 
+                    your ROI. Let us amplify your brand message across the digital landscape, ensuring 
+                    it reaches the right audience at the right time.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h1 class="header-text">Social Media Marketing</h1>
+                    <div class="arrow">
+                        <img src="img/arrow-down-svgrepo-com.svg">
+                    </div>
+                    <span class="arrow"></span>
+                </div>
+                <div class="accordion-content">
+                    <p>Engage, inspire, and grow with our social media marketing expertise. We harness 
+                    the power of platforms to cultivate meaningful connections with your audience. 
+                    From content creation to community management, we've got the tools to transform 
+                    your social presence into a dynamic force driving brand loyalty and awareness.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h1 class="header-text">Email Marketing</h1>
+                    <div class="arrow">
+                        <img src="img/arrow-down-svgrepo-com.svg">
+                    </div>
+                    <span class="arrow"></span>
+                </div>
+                <div class="accordion-content">
+                    <p>Unlock the potential of personalized communication. Our email marketing strategies
+                        are designed to captivate your audience and drive results. From crafting compelling
+                        content to optimizing delivery, we ensure your messages resonate and convert,
+                        fostering lasting relationships with your subscribers.</p>
+                </div>
+
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h1 class="header-text">Search Engine Optimization</h1>
+                    <div class="arrow">
+                        <img src="img/arrow-down-svgrepo-com.svg">
+                    </div>
+                    <span class="arrow"></span>
+                </div>
+                <div class="accordion-content">
+                    <p>Be visible, be found! Our SEO wizards work tirelessly to optimize your online presence,
+                        making sure your brand stands out in search engine results. We delve into the intricacies
+                        of algorithms, keywords, and analytics to propel your website to the top, driving organic
+                        traffic and boosting your digital prominence.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h1 class="header-text">Web Hosting</h1>
+                    <div class="arrow">
+                        <img src="img/arrow-down-svgrepo-com.svg">
+                    </div>
+                    <span class="arrow"></span>
+                </div>
+                <div class="accordion-content">
+                    <p>Reliability meets performance with our top-notch web hosting services. Whether 
+                    you're a small business or a large enterprise, we provide secure and scalable hosting solutions.
+                        Experience seamless uptime, fast loading speeds, and the peace of mind that comes with knowing
+                        your digital foundation is in expert hands.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+<style>/* Accordion Styles */
+    .accordionDiv{
+      display:flex;
+      border-top: 1px solid black;
+      width:100%;
+    
+    }
+    
+    .doodle{
+      margin:auto;
+      max-width:25%;
+    }
+    
+    .plantDoodle{
+      width:28vw;
+    
+    }
+    .accordionSection{
+    
+      margin-bottom:15vh;
+      padding-top:5vh;
+    }
+    .accordion {
+      width: 85%;
+      right: 0;
+      margin: 20px 0 20px auto;
+    }
+    
+    .accordion-item {
+      margin-bottom: -45px;
+      border: none;
+    }
+    
+    .accordion-header {
+      letter-spacing: -1px;
+      padding: 10px;
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      transition: color 0.3s ease-in-out; /* Added transition for color change */
+    }
+    
+    .header-text {
+      font-weight: 500;
+    }
+    
+    .accordion-content {
+      color: #2b2b28;
+      line-height: 200%;
+      font-size: large;
+      padding: 10px;
+      margin-top:-5vh;
+      margin-bottom:3vh;
+      padding-right: 20%;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+    
+    .active .accordion-content {
+      max-height: 1000px;
+      visibility: visible;
+      transition: max-height 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+    
+    .accordion-header:hover,
+    .accordion-header:hover .arrowLearn img:hover {
+      color: #005A86; 
+    }
+    
+    </style>
