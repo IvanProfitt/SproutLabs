@@ -47,38 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
   
-  document.addEventListener("DOMContentLoaded", function () {
-    const accordionHeaders = document.querySelectorAll('.accordion-header');
-    let openAccordion = null;
-
-    accordionHeaders.forEach(header => {
-        header.addEventListener('click', function () {
-            const accordionItem = this.parentElement;
-            const accordionContent = accordionItem.querySelector('.accordion-content');
-            const arrow = this.querySelector('.arrow');
-
-            if (openAccordion && openAccordion !== accordionItem) {
-                // Close the currently open accordion
-                openAccordion.classList.remove('active');
-                openAccordion.querySelector('.accordion-content').style.maxHeight = '0';
-                openAccordion.querySelector('.arrow').classList.remove('clicked');
-            }
-
-            // Toggle active class for styling
-            accordionItem.classList.toggle('active');
-
-            // Toggle visibility of content
-            accordionContent.style.maxHeight = accordionItem.classList.contains('active') ? accordionContent.scrollHeight + 'px' : '0';
-
-            // Rotate the arrow with transition
-            arrow.classList.toggle('clicked');
-
-            // Update the open accordion
-            openAccordion = accordionItem;
-        });
-    });
-});
-
+ 
 
 window.onscroll = function() {scrollFunction()};
 
@@ -111,25 +80,6 @@ function scrollFunction() {
 
 
 
-
-
-function subscribe() {
-  var emailInput = document.getElementById("emailInput").value;
-  var confirmationMsg = document.getElementById("confirmationMsg");
-  if (validateEmail(emailInput)) {
-    confirmationMsg.textContent = "Thank you for subscribing!";
-    confirmationMsg.style.color = "green";
-    // Here you can add code to send the email to your server for processing
-  } else {
-    confirmationMsg.textContent = "Please enter a valid email address.";
-    confirmationMsg.style.color = "red";
-  }
-}
-
-function validateEmail(email) {
-  var re = /\S+@\S+\.\S+/;
-  return re.test(email);
-}
 
 
 
